@@ -12,7 +12,7 @@ val Typography = Typography(
     h3 = TextStyle(
         fontFamily = FontFamily.Cursive,
         fontWeight = FontWeight.W500,
-        fontSize = 22.sp
+        fontSize = 25.sp
     ),
 
     body1 = TextStyle(
