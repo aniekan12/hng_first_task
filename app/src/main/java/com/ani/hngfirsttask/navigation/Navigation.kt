@@ -16,7 +16,7 @@ fun Navigation() {
             SlackIdentity(navController = navController)
         }
         composable(route = Screen.WebViewScreen.route){
-            WebViewScreen()
+            WebViewScreen(navController = navController)
         }
     }
 }

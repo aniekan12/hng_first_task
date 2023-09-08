@@ -15,16 +15,19 @@ import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
 import com.ani.hngfirsttask.R
 import com.ani.hngfirsttask.composables.AppBar
+import com.ani.hngfirsttask.navigation.Screen
 import com.ani.hngfirsttask.ui.theme.Purple200
 import com.ani.hngfirsttask.utils.Constants
 
 @Composable
-fun WebViewScreen() {
+fun WebViewScreen(navController: NavController) {
     val visibility = remember { mutableStateOf(false) }
 
     Scaffold(
         topBar = {
-            AppBar(text = R.string.aniekans_github)
+            AppBar(text = R.string.aniekans_github, isAnotherScreen = true, onBackButtonPressed = {
+                navController.navigateUp()
+            })
         },
     ) {
         if (visibility.value) {
