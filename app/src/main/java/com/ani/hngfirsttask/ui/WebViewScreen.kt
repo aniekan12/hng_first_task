@@ -6,11 +6,17 @@ import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.navigation.NavController
+import com.ani.hngfirsttask.R
+import com.ani.hngfirsttask.composables.AppBar
 import com.ani.hngfirsttask.utils.Constants
 
 @Composable
 fun WebViewScreen() {
-    Scaffold() {
+    Scaffold(
+        topBar = {
+            AppBar(text= R.string.aniekans_github)
+        },
+    ) {
         AndroidView(
             factory = {
                 WebView(it).apply {

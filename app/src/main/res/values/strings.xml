@@ -2,5 +2,7 @@
     <string name="app_name">Hng First Task</string>
     <string name="slack_name">aniekan akpakpan</string>
     <string name="open_github">Open GitHub</string>
+    <string name="aniekans_slack_identity">"Aniekan's Slack Identity"</string>
+    <string name="aniekans_github">"Aniekan's GitHub"</string>
 
 </resources>

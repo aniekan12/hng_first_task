@@ -12,6 +12,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavController
 import com.ani.hngfirsttask.R
+import com.ani.hngfirsttask.composables.AppBar
 import com.ani.hngfirsttask.composables.AppButton
 import com.ani.hngfirsttask.composables.CircleAvatar
 import com.ani.hngfirsttask.composables.Heading1Text
@@ -21,11 +22,7 @@ import com.ani.hngfirsttask.navigation.Screen
 fun SlackIdentity(navController: NavController) {
     Scaffold(
         topBar = {
-            TopAppBar(
-                title = {
-                    Text("Aniekan's Slack Identity")
-                }
-            )
+            AppBar(text= R.string.aniekans_slack_identity)
         },
     ) {
         Content(navController = navController)
