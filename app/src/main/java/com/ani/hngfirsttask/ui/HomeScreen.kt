@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.material.Card
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -31,17 +32,19 @@ fun SlackIdentity(navController: NavController) {
 @Composable
 
 fun Content(navController: NavController) {
-    Column(
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
-            .fillMaxSize()
-            .fillMaxWidth()
-    ) {
-        CircleAvatar(imageId = R.drawable.ani, contentDescription = "fine ani", circleSize = 200)
-        Heading1Text(text = R.string.slack_name, padding = 10)
-        AppButton(onClick = {
-            navController.navigate(Screen.WebViewScreen.route)
-        }, buttonText = R.string.open_github, padding = 10)
+    Card() {
+        Column(
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally,
+            modifier = Modifier
+                .fillMaxSize()
+                .fillMaxWidth()
+        ) {
+            CircleAvatar(imageId = R.drawable.ani, contentDescription = "fine ani", circleSize = 200)
+            Heading1Text(text = R.string.slack_name, padding = 10)
+            AppButton(onClick = {
+                navController.navigate(Screen.WebViewScreen.route)
+            }, buttonText = R.string.open_github, padding = 10)
+        }
     }
 }
