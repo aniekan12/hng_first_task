@@ -1,4 +1,4 @@
-package com.ani.hngfirsttask.widgets
+package com.ani.hngfirsttask.composables
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
